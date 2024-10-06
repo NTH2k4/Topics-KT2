@@ -2,4 +2,156 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Segoe UI';
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 30px;
+    gap: 60px;
+    /* border: 1px solid red; */
+}
+
+.row-left {
+    float: left;
+    width: 55%;
+}
+
+.main-picture img {
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+}
+
+.slide-picture {
+    display: flex;
+    justify-content: space-between;
+    gap: 2px;
+    position: relative;
+}
+
+.slide-picture img {
+    width: calc(25% - 1.5px);
+    height: auto;
+}
+
+.roll-left, .roll-right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    max-width: 28px;
+    max-height: 42px;
+}
+
+.roll-left {
+    left: 5px;
+}
+
+.roll-right {
+    right: 5px;
+}
+
+.title-item {
+    text-transform: uppercase;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.in-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.parameter {
+    font-weight: 600;
+}
+
+.price {
+    font-weight: 700;
+    font-size: 20px;
+    color: #f15e2c;
+}
+
+.divider {
+    border-top: 2px dashed black;
+    opacity: 0.5;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.color-list {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.color1 {
+    width: 40px;
+    height: 40px;
+    background-color: #f0f0ec;
+}
+
+.row {
+    display: flex;
+    gap: 30px;
+}
+
+.choose-size, .choose-quantity{
+    width: 50%;
+}
+
+.choose-size select, .choose-quantity select {
+    width: 100%;
+    padding: 6px;
+    border: 1px solid back;
+}
+
+.choose-size select, .choose-quantity select {
+    margin: 10px 0;
+}
+
+.row-btn {
+    display: flex;
+    gap: 10px;
+}
+
+.row-btn button {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    background-color: black;
+}
+
+.add-cart {
+    width: 80%;
+    height: 75x;
+}
+
+.like {
+    width: 20%;
+    height: 75px;
+}
+
+.pay button{
+    width: 100%;
+    height: 75px;
+    background-color: #f15e2c;
+    color: white;
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.row-btn button, .pay button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.panel-group .endline{
+    height: 10px;
 }
