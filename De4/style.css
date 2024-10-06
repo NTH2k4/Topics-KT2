@@ -1,0 +1,315 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI';
+}
+
+button {
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto; 
+    margin-top: 30px;
+    gap: 40px;
+}
+
+.row-left {
+    float: left;
+    width: 65%;
+}
+
+.row-right {
+    float: right;
+    width: 35%;
+    /* padding: 0px 20px 30px 20px; */
+}
+
+.slide-item{
+    display: flex;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.title-18 {
+    font-size: 18px;
+    font-weight: 700;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid black;
+}
+
+.slide-item .item {
+    display: flex;
+    /* border: 1px solid black; */
+    padding: 0px 10px 5px 10px;
+}
+
+.item .info-item {
+    position: relative;
+    margin-left: 20px;
+}
+
+.item .info-item .price {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: #f15e2c;
+}
+
+.item button {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 125px;
+    height: 40px;
+    background-color: #f15e2c;
+    border: none;
+    color: white;
+    font-size: 16px;
+}
+
+.roll-left, .roll-right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    max-width: 28px;
+    max-height: 42px;
+    cursor: pointer;
+}
+
+.roll-left {
+    left: 10px; 
+}
+
+.roll-right {
+    right: 10px;
+}
+
+.slide-item img {
+    width: 50%;
+    height: auto;
+}
+
+.title-cart {
+    font-size: 20px;
+    background-color: #f1f1f1;
+    margin: 20px 0px 20px 0px;
+    padding: 5px 20px 5px 20px;
+}
+
+.item-main {
+    display: flex;
+}
+
+.item-main .img-item{
+    width: 30%;
+    padding-right: 20px;
+}
+
+.row-bottom {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    bottom: 0px;
+    position: absolute;
+}
+
+.info-item-main {
+    position: relative;
+    width: 40%;
+}
+
+.choose-size select, .choose-quantity select {
+    width: 110px;
+    height: 40px;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.row-bottom h2 {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.info-item-main .name {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.info-item-main .price {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.total-price {
+    position: relative;
+    width: 25%;
+    text-align: right;
+    float: right;
+    margin-left: auto;
+}
+
+.total-price > * {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.total-price > *:last-child {
+    padding-bottom: 0px;
+}
+
+.total-price button {
+    width: 125px;
+    height: 40px;
+}
+
+.total-price .button {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+
+.btn-like button {
+    background-color: white;
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
+
+.btn-delete button {
+    background-color: black;
+}
+
+.total-price .price {
+    font-size: 20px;
+    font-weight: 700;
+    color: #f15e2c;
+}
+
+.total-price .status {
+    color: #f15e2c;
+}
+
+.row-left .divider {
+    border-top: 2px solid black;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.row-btn {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 35px;
+}
+
+.row-btn button {
+    width: 240px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.row-right .list-group {
+    list-style: none;
+    background-color: #f1f1f1;
+    padding: 0px 20px 30px 20px;
+}
+
+.row-right .title-right {
+    font-size: 22px;
+    font-weight: 700;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid black;
+}
+
+.divider {
+    border-top: 1px dashed black;
+    margin: 10px 0px 10px 0px;
+    padding: 5px 0px 5px 0px;
+}
+
+.list-group .title1{
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 40px;
+}
+
+.list-group .text-box {
+    padding: 10px 0px 10px 0px;
+}
+
+.text-box .input-group {
+    display: flex;
+}
+
+.text-box .input-group input {
+    width: 70%;
+    height: 40px;
+    border: 1px solid gray;
+}
+
+.text-box .input-group button {
+    width: 30%;
+    height: 40px;
+    background-color: #f15e2c;
+    color: white;
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.list-group .text1 {
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+.list-group .text2 {
+    padding-bottom: 20px;
+    color: gray;
+}
+
+.text1, .text2 .title-text2 {
+    font-size: 16px;
+    font-weight: 700;
+    color: gray;
+}
+
+.text1, .text2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-group .price {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 18px;
+    align-items: center;
+    padding: 10px 0px 10px 0px;
+}
+
+.list-group .price .cont-text3 {
+    font-size: 24px;
+}
+
+.pay button{
+    width: 100%;
+    height: 80px;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: #f15e2c;
+    color: white;
+    border: none;
+    padding: 6px 12px 6px 12px;
+    margin-top: 12px;
+}
