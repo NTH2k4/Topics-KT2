@@ -80,6 +80,8 @@
     text-align: right;
     border-radius: 5px;
     border: 1px solid gray;
+    padding: 5px;
+    color: gray;
 }
 
 .range-slider {
@@ -144,6 +146,10 @@
 .sort span {
     color: gray;
     font-size: 14px;
+}
+
+.sort select{
+    border: 1px solid #e5e7eb;
 }
 
 .header-right {
